@@ -10,6 +10,6 @@ const exercisesSchema = new Schema({
     sets: Number
 });
 
-const Exercises = mongoose.model("Transaction", exercisesSchema);
+const Exercises = mongoose.model("Exercises", exercisesSchema);
 
 module.exports = Exercises;
