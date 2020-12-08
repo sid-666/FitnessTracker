@@ -1,4 +1,4 @@
-# Burger Order App
+# Fitness Tracker
 ## Description
 This application allows the user to create, update and track their fitness regime. This is done through the use of MongoDB and Mangoose as its ORM, where through Mongoose models can be formed for a collection.
 ## User Story
