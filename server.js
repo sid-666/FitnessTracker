@@ -18,19 +18,19 @@ app.use(express.static("public"));
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populate", { useNewUrlParser: true });
 
 db.Workout.create({ name: "Workout" })
-  .then(dbWorkout => {
-    console.log(dbWorkout);
-  })
-  .catch(({message}) => {
-    console.log(message);
-  });
+    .then(dbWorkout => {
+        console.log(dbWorkout);
+    })
+    .catch(({ message }) => {
+        console.log(message);
+    });
 
 
-require("./routes/apiRrouter.js")(app);
+require("./routes/apiRouter.js")(app);
 require("./routes/htmlRouter.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
-console.log("App listening on PORT " + PORT);
+app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT, `http://localhost:${PORT}`);
 });
